@@ -12,7 +12,7 @@ namespace SmashBros
 	bool Preferences::highfps = true;
 	bool Preferences::hapticFeedback = true;
 	
-	const String Preferences::version = "2.21-3";
+	const String Preferences::version = "2.21-4";
 	
 	bool Preferences::newVersion = false;
 	
