@@ -724,16 +724,16 @@ namespace SmashBros
 
 	void OptionsMenu::Initialize()
 	{
-		addItem(140, 270, "Images/Menus/Buttons/Options/controls.png", "Images/Menus/Buttons/Options/controls_selected.png", "ControlOptions");
+		addItem(0, 0, "Images/Menus/Buttons/Options/controls.png", "Images/Menus/Buttons/Options/controls_selected.png", "ControlOptions");
 		setItemScale(0, 0);
 		setItemSound(0, Menus::soundMgr->getSound("select menu item"));
-		addItem(346, 270, "Images/Menus/Buttons/Options/sound.png", "Images/Menus/Buttons/Options/sound_selected.png", "AudioOptions");
+		addItem(244.625, 270, "Images/Menus/Buttons/Options/sound.png", "Images/Menus/Buttons/Options/sound_selected.png", "AudioOptions");
 		setItemScale(1, 1.6f);
 		setItemSound(1, Menus::soundMgr->getSound("select menu item"));
-		addItem(554, 270, "Images/Menus/Buttons/Options/display.png", "Images/Menus/Buttons/Options/display_selected.png", "DisplayOptions");
+		addItem(450.625, 270, "Images/Menus/Buttons/Options/display.png", "Images/Menus/Buttons/Options/display_selected.png", "DisplayOptions");
 		setItemScale(2, 1.6f);
 		setItemSound(2, Menus::soundMgr->getSound("select menu item"));
-		addItem(760, 270, "Images/Menus/Buttons/Options/other.png", "Images/Menus/Buttons/Options/other_selected.png", "OtherOptions");
+		addItem(656.625, 270, "Images/Menus/Buttons/Options/other.png", "Images/Menus/Buttons/Options/other_selected.png", "OtherOptions");
 		setItemScale(3, 1.6f);
 		setItemSound(3, Menus::soundMgr->getSound("select menu item"));
 	}
