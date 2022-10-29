@@ -762,10 +762,6 @@ namespace SmashBros
 			Menus::description->setText("");
 			break;
 			
-			case 0:
-			Menus::description->setText("Customize your controls to fit your preference");
-			break;
-			
 			case 1:
 			Menus::description->setText("Change sound/music volume and behavior");
 			break;
