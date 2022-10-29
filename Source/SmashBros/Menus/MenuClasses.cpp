@@ -745,7 +745,7 @@ namespace SmashBros
 	void OptionsMenu::Initialize()
 	{
 		addItem(140, 270, "Images/Menus/Buttons/Options/controls.png", "Images/Menus/Buttons/Options/controls_selected.png", "ControlOptions");
-		setItemScale(0, 1.6f);
+		setItemScale(0, 0);
 		setItemSound(0, Menus::soundMgr->getSound("select menu item"));
 		addItem(346, 270, "Images/Menus/Buttons/Options/sound.png", "Images/Menus/Buttons/Options/sound_selected.png", "AudioOptions");
 		setItemScale(1, 1.6f);
