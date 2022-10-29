@@ -1103,7 +1103,7 @@ namespace SmashBros
 		pauseButton->changeAnimation("normal", FORWARD);
 		pauseButton->setRelativeToView(false);
 		pauseButton->setAlpha(0.2f);
-		pauseButton->setScale(2.0f);
+		pauseButton->setScale(0);
 		
 		resumeButton = new Actor(220,160);
 		resumeButton->addAnimation(new Animation("normal", 1, "Images/Game/HUD/ResumeButton.png"));
