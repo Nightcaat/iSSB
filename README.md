@@ -1,6 +1,6 @@
 # iSSB - buttonless
 
-A fork of the cross-platform *Super Smash Bros. Brawl* fan game that lazily removes the in-game controller buttons on Windows. Useful for decluttering screenshots or other content since they don't work anyway. If they did, the ideal solution would be to show them if touchscreen input is detected and hide them if that stops being the case, but that's not this fork's goal.
+A fork of the cross-platform *Super Smash Bros. Brawl* fan game that removes the on-screen controller buttons and options, decluttering the UI. This is intended to be compiled for Windows and is recommended for all PC players.
 
 This project uses Git submodules, so to download it, you'll have to clone it recursively:
 
