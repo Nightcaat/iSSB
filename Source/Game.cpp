@@ -69,7 +69,7 @@ namespace SmashBros
 			setFPS(30);
 			setUpdatesPerFrame(2);
 		}
-		//setWindowTitle("Super Smash Bros.");
+		setWindowTitle("iSSB");
 	}
 	
 	void Game::LoadContent()
