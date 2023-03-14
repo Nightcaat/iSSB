@@ -148,15 +148,19 @@ namespace SmashBros
 			break;
 					
 			case 0:
-			Menus::description->setText("Play a variety of Smash modes with multiple players");
+			Menus::description->setText("Play a variety of Smash modes with multiple players.");
 			break;
 					
 			case 1:
-			Menus::description->setText("Play this mode solo or challenge it coopertively");
+			Menus::description->setText("Play this mode solo or challenge it cooperatively.");
 			break;
 					
 			case 2:
-			Menus::description->setText("Choose and save your own personal Smash settings");
+			Menus::description->setText("Choose and save your own personal Smash settings.");
+			break;
+
+			case 3:
+			Menus::description->setText("Play different modes while connected to Bluetooth.");
 			break;
 		}
 	}
@@ -218,6 +222,10 @@ namespace SmashBros
 			case 0:
 			Menus::description->setText("Jump right in and start brawling with your friends!");
 			break;
+
+			case 1:
+			Menus::description->setText("Set the brawl rules before you fight!");
+			break;
 		}
 		Menus::description->Update(gameTime);
 	}
@@ -264,12 +272,24 @@ namespace SmashBros
 	{
 		MenuScreen::Update(gameTime);
 		Menus::button_back->Update(gameTime);
+		switch (selectedIndex)
+		{
+		default:
+			Menus::description->setText("");
+			break;
+
+		case 0:
+			Menus::description->setText("Head here for your daily training. (1 player)");
+			break;
+		}
+		Menus::description->Update(gameTime);
 	}
 
 	void SoloMenu::Draw(Graphics2D&g, long gameTime)
 	{
 		MenuScreen::Draw(g, gameTime);
 		Menus::button_back->Draw(g, gameTime);
+		Menus::description->Draw(g, gameTime);
 	}
 
 	BrawlCharSelect::RulesBar::RulesBar(float x1, float y1) : Actor(x1,y1)
@@ -583,7 +603,7 @@ namespace SmashBros
 			{
 				rules_bar_value->setText((String)"" + Global::stockAmount);
 			}
-			rules_bar_text->setText("- Man Survival Test!");
+			rules_bar_text->setText("-man survival test!");
 			break;
 					
 			case Global::MODE_TIME_LIMIT:
@@ -601,7 +621,7 @@ namespace SmashBros
 			{
 				rules_bar_value->setText((String)"" + Global::timeLimit);
 			}
-			rules_bar_text->setText("- Minute Survival Match!");
+			rules_bar_text->setText("-minute KO fest!");
 			break;
 		}
 		rules_bar_value->Update(gameTime);
@@ -763,19 +783,19 @@ namespace SmashBros
 			break;
 			
 			case 0:
-			Menus::description->setText("Customize your controls to fit your preference");
+			Menus::description->setText("Set and save your preferred control configurations.");
 			break;
 			
 			case 1:
-			Menus::description->setText("Change sound/music volume and behavior");
+			Menus::description->setText("Adjust the audio volume and behavior.");
 			break;
 			
 			case 2:
-			Menus::description->setText("Change window to full screen and other display settings");
+			Menus::description->setText("Change the frame rate and other display settings.");
 			break;
 			
 			case 3:
-			Menus::description->setText("Miscellaneous settings");
+			Menus::description->setText("View the developer's social media and donation links.");
 			break;
 		}
 		Menus::description->Update(gameTime);
@@ -1904,22 +1924,22 @@ namespace SmashBros
 			Menus::description->setText("");
 			break;
 			case Global::ITEM_SMASHBALL:
-			Menus::description->setText("Smash Ball - Allows you to use your Final Smash");
+			Menus::description->setText("Smash Ball - Allows you to use your Final Smash.");
 			break;
 			case Global::ITEM_RAYGUN:
-			Menus::description->setText("Ray Gun - Fires a laser bullet at your opponent");
+			Menus::description->setText("Ray Gun - Fires blast after blast of laser beams.");
 			break;
 			case Global::ITEM_HEARTCONTAINER:
-			Menus::description->setText("Heart Container - Replenishes 100% damage");
+			Menus::description->setText("Heart Container - Replenishes 100% damage upon grab.");
 			break;
 			case Global::ITEM_BEAMSWORD:
-			Menus::description->setText("Beam Sword - Saber of pure energy. Hits hard!");
+			Menus::description->setText("Beam Sword - Gives overpowering reach when slashing.");
 			break;
 			case Global::ITEM_SUPERMUSHROOM:
-			Menus::description->setText("Super Mushroom - Makes you become giant-sized");
+			Menus::description->setText("Super Mushroom - Makes you enormous and powerful!");
 			break;
 			case Global::ITEM_POISONMUSHROOM:
-			Menus::description->setText("Poison Mushroom - Shrinks your characters to mini-size.");
+			Menus::description->setText("Poison Mushroom - Makes you tiny and easier to KO.");
 			break;
 		}
 		Menus::description->Update(gameTime);
