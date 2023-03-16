@@ -43,7 +43,7 @@ namespace SmashBros
 		
 		weight = 0.12;
 		
-		name = "Pikachu";
+		name = "PIKACHU";
 		
 		setScale(1.0f);
 		
