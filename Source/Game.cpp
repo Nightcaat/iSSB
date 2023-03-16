@@ -10,7 +10,7 @@ namespace SmashBros
 	Game::Game()
 	{
 		//Constructor
-		View::setSize(1920, 1280);
+		View::setSize(2560, 1440);
 		firstUpdate = true;
 		drawnOnce = false;
 	}

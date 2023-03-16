@@ -107,7 +107,7 @@ namespace GameEngine
 	long Application::firstFrame = 0;
 	long Application::lastFrameTime = 0;
 	bool Application::gameRunning = false;
-	bool Application::borderless = false;
+	bool Application::borderless = true;
 	bool Application::scalescreen = false;
 	bool Application::fullscreen = false;
 	unsigned char Application::orientation = Application::ORIENTATION_LANDSCAPE;
