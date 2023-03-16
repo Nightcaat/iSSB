@@ -30,7 +30,7 @@ namespace SmashBros
 		
 		weight = 0.16;
 		
-		name = "Ichigo";
+		name = "ICHIGO";
 		
 		setScale(0.95f);
 		

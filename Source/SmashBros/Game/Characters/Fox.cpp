@@ -37,7 +37,7 @@ namespace SmashBros
 		
 		weight = 0.17;
 		
-		name = "Fox";
+		name = "FOX";
 		
 		setHitbox(-10, -14, 20, 35);
 		setHitboxColor(Color::GREEN);

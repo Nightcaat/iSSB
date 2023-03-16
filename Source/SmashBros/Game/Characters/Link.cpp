@@ -42,7 +42,7 @@ namespace SmashBros
 		
 		weight = 0.09;
 		
-		name = "Link";
+		name = "LINK";
 		
 		//setItemOffset(17, 13);
 		setItemOffset(13, 9);

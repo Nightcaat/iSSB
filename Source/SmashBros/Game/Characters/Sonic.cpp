@@ -40,7 +40,7 @@ namespace SmashBros
 		
 		weight = 0.1;
 		
-		name = "Sonic";
+		name = "SONIC";
 		
 		setScale(0.95f);
 		
