@@ -616,7 +616,7 @@ namespace SmashBros
 			percentText->changeAnimation((String)"" + percentString.charAt(i), FORWARD);
 			percentText->x = x + currentX;
 			percentText->Draw(g, gameTime);
-			currentX -=42;
+			currentX -=32;
 		}
 		
 		playerName->x = x;
