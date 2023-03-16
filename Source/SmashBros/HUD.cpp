@@ -608,15 +608,7 @@ namespace SmashBros
 		symbol->x = x + 30;
 		symbol->y = y + 15;
 		symbol->Draw(g, gameTime);
-		String percentString = "";
-		if(percent<10)
-		{
-			percentString = (String)"0" + percent + "%";
-		}
-		else
-		{
-			percentString = (String)percent + "%";
-		}
+		String percentString = (String)percent + "%";
 		float currentX = 50;
 		percentText->y = y + 10;
 		for(int i=(percentString.length()-1); i>=0; i--)
