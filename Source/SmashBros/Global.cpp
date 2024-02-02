@@ -54,10 +54,10 @@ namespace SmashBros
 	boolean*Global::itemsOn = new boolean[30];
 	ArrayList<int> Global::itemsActive = ArrayList<int>();
 
-	int Global::maxLives = 20;
+	int Global::maxLives = 99;
 	int Global::minLives = 1;
 
-	int Global::maxTime = 45;
+	int Global::maxTime = 99;
 	int Global::minTime = 1;
 	
 	ArrayList<int> Global::stageVotes = ArrayList<int>();
