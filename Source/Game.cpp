@@ -51,6 +51,7 @@ namespace SmashBros
 		//Initialize things
 		scaleToWindow(true,900,600);
 
+		AssetManager::loadImage("Images/icon.png");
 		setLoadScreen("Images/loading.png");
 		
 		Global::init();
