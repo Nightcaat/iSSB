@@ -1264,7 +1264,7 @@ namespace SmashBros
 	void AudioOptions::LoadContent()
 	{
 		Menus::menuNo = MENU_AUDIOOPTIONS;
-		Game::setBackgroundImage("Images/Menus/Backgrounds/bg2.png");
+		Game::setBackgroundImage("Images/Menus/Backgrounds/bg1.png");
 	}
 	
 	void AudioOptions::UnloadContent()
@@ -1354,7 +1354,7 @@ namespace SmashBros
 	void DisplayOptions::LoadContent()
 	{
 		Menus::menuNo = MENU_DISPLAYOPTIONS;
-		Game::setBackgroundImage("Images/Menus/Backgrounds/bg2.png");
+		Game::setBackgroundImage("Images/Menus/Backgrounds/bg1.png");
 		if(Preferences::highFPS())
 		{
 			fps->setValue(60);
@@ -1501,6 +1501,7 @@ namespace SmashBros
 	void OtherOptions::LoadContent()
 	{
 		Menus::menuNo = MENU_OTHEROPTIONS;
+        Game::setBackgroundImage("Images/Menus/Backgrounds/bg1.png");
 	}
 	
 	void OtherOptions::Update(long gameTime)
